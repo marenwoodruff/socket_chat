@@ -1,0 +1,25 @@
+{
+  "name": "socket-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/marenwoodruff/socket_chat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marenwoodruff/socket_chat/issues"
+  },
+  "homepage": "https://github.com/marenwoodruff/socket_chat#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "hbs": "^4.0.1",
+    "socket.io": "^1.7.1"
+  }
+}
