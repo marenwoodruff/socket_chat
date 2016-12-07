@@ -32,6 +32,12 @@ app.get('/', function (req, res) {
 io.on('connection', function(socket){
   console.log('a user connected');
 
+  // receive and broadcast chat messages
+  socket.on('chat message', function (msg) {
+    console.log('message:', msg);
+    io.emit('chat message', msg);
+  });
+
   socket.on('disconnect', function() {
     console.log('user disconnected');
   });

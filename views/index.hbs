@@ -17,7 +17,16 @@
   <title>Socket Chat</title>
 </head>
 <body>
-  <h1>Hello world<h1>
+  <h1>List of Messages<h1>
+  <!-- list of messages -->
+  <ul id="messages"></ul>
+
+  <!-- form to send a new message -->
+  <h2>Send a message to a friend!</h2>
+  <form id="send-msg">
+    <input type="text" id="new-msg" placeholder="Your message" autofocus>
+    <input type="submit" value="Send">
+  </form>
 
   <!-- jquery -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
