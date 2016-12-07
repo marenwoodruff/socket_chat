@@ -27,3 +27,12 @@ app.set('view engine', 'hbs');
 app.get('/', function (req, res) {
   res.render('index');
 });
+
+// connect to socket
+io.on('connection', function(socket){
+  console.log('a user connected');
+
+  socket.on('disconnect', function() {
+    console.log('user disconnected');
+  });
+});
